@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FA903FB-51CF-454D-ACF1-A88EF97C74B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pventas</RootNamespace>
+    <AssemblyName>Pventas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clases\Conexion.cs" />
+    <Compile Include="formas\Frmaccesoo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\Frmaccesoo.Designer.cs">
+      <DependentUpon>Frmaccesoo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmarticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmarticulos.Designer.cs">
+      <DependentUpon>frmarticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmcatalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmcatalogos.Designer.cs">
+      <DependentUpon>frmcatalogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmclientes.Designer.cs">
+      <DependentUpon>frmclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmgrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmgrupos.Designer.cs">
+      <DependentUpon>frmgrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\Frmmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\Frmmenu.Designer.cs">
+      <DependentUpon>Frmmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmproveedores1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmproveedores1.Designer.cs">
+      <DependentUpon>frmproveedores1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmreporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmreporte.Designer.cs">
+      <DependentUpon>frmreporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formas\frmventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\frmventa.Designer.cs">
+      <DependentUpon>frmventa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informes\clientesporclave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clientesporclave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\clientespornombre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clientespornombre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\frmarticulogrupo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmarticulogrupo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\frtarticulos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frtarticulos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\frtclientepornombre2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frtclientepornombre2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\frtgruponombre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frtgruponombre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\frtgrupos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frtgrupos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\frtcatalagos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frtcatalagos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\grupoporclave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>grupoporclave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formas\Frmaccesoo.resx">
+      <DependentUpon>Frmaccesoo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmarticulos.resx">
+      <DependentUpon>frmarticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmcatalogos.resx">
+      <DependentUpon>frmcatalogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmclientes.resx">
+      <DependentUpon>frmclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmgrupos.resx">
+      <DependentUpon>frmgrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\Frmmenu.resx">
+      <DependentUpon>Frmmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmproveedores1.resx">
+      <DependentUpon>frmproveedores1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmreporte.resx">
+      <DependentUpon>frmreporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\frmventa.resx">
+      <DependentUpon>frmventa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\clientesporclave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>clientesporclave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\clientespornombre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>clientespornombre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\frmarticulogrupo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frmarticulogrupo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\frtarticulos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frtarticulos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\frtclientepornombre2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frtclientepornombre2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\frtgruponombre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frtgruponombre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\frtgrupos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frtgrupos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\frtcatalagos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frtcatalagos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\grupoporclave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>grupoporclave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Puerta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\puerta.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

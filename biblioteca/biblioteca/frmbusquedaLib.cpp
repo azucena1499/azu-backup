@@ -1,0 +1,2 @@
+#include "frmbusquedaLib.h"
+

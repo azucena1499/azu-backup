@@ -1,0 +1,28 @@
+﻿  frmLibros.cpp
+C:\Users\azucena\source\repos\biblioteca\biblioteca\libros.h(52,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\libros.h(75,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\libros.h(113,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\frmLibros.h(364,31): warning C4101: 'st': variable local sin referencia
+  frmMenuu.cpp
+C:\Users\azucena\source\repos\biblioteca\biblioteca\libros.h(52,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\libros.h(75,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\libros.h(113,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\frmLibros.h(364,31): warning C4101: 'st': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Generos.h(61,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Generos.h(92,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\frmGeneros.h(220,31): warning C4101: 'st': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Clientes.h(48,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Clientes.h(71,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Clientes.h(107,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Autores.h(38,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Autores.h(61,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\frmAutores.h(209,31): warning C4101: 'st': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Editoriales.h(38,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Editoriales.h(69,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\Editoriales.h(92,25): warning C4101: 'e': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\frmEditoriales.h(216,31): warning C4101: 'st': variable local sin referencia
+C:\Users\azucena\source\repos\biblioteca\biblioteca\frmMenuu.cpp(6,1): warning C4829: Parámetros posiblemente incorrectos para la función main. Utilice 'int main(Platform::Array<Platform::String^>^ argv)'
+  Generando código...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1276,5): warning MSB8012: TargetName(biblioteca) does not match the Linker's OutputFile property value (bibliotecamain). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  Autores.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  biblioteca.vcxproj -> C:\Users\azucena\source\repos\biblioteca\Debug\bibliotecamain
